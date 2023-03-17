@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-color: #3C2A21;
+    --btn-color: #1A120B;
+    --bg-color: linear-gradient(90deg, rgba(241, 222, 201, 0.9), rgba(0, 0, 0, 0) 20%),
+        linear-gradient(180deg, rgba(200, 182, 166, 0.9), rgba(0, 0, 0, 0) 40%),
+        linear-gradient(270deg, rgba(164, 144, 124, 0.9), rgba(0, 0, 0, 0) 60%),
+        linear-gradient(360deg, rgba(142, 123, 104, 0.9), rgba(0, 0, 0, 0) 80%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.8) 4px 4px 8px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+#number {
+    font-size: 3rem;
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+    padding: 20px;
+}
+
+button {
+    background-color: var(--btn-color);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 4px;
+    padding: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
